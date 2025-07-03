@@ -48,5 +48,8 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_ipam_child_pools"></a> [ipam\_child\_pools](#output\_ipam\_child\_pools) | The child IPAM pools created in the Virtual Network Manager. |
+| <a name="output_ipam_parent_pools"></a> [ipam\_parent\_pools](#output\_ipam\_parent\_pools) | The parent IPAM pool created in the Virtual Network Manager. |
 <!-- END_TF_DOCS -->

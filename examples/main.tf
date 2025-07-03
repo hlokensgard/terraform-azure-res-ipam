@@ -24,3 +24,15 @@ module "ipam_pools" {
     }
   }
 }
+
+
+# Create a virtual network that uses the IPAM pools created by the module
+resource "azurerm_virtual_network" "this" {
+  name                = "example-vnet"
+  location            = "westeurope"
+  resource_group_name = "example-rg"
+  ip_address_pool {
+    id                     = module.ipam_pools.ipam_child_pools["child1"].id
+    number_of_ip_addresses = 256
+  }
+}
