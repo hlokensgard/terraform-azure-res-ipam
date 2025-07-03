@@ -1,5 +1,10 @@
 # Local .terraform directories
-.terraform/
+**/.terraform/*
+
+# Lock files
+**.lock.hcl
+# Additional lock files
+**/*.lock.hcl
 
 # .tfstate files
 *.tfstate
@@ -35,3 +40,6 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Remove todos
+**/TODO.md
